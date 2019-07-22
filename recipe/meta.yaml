@@ -1,5 +1,5 @@
 {% set name = "querystring_parser" %}
-{% set version = "1.2.3" %}
+{% set version = "1.2.4" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4c31b547c77b927a8aceccd6fa37f8152aa92fe5654a43d7363fcee8cf6d8aea
+  sha256: 644fce1cffe0530453b43a83a38094dbe422ccba8c9b2f2a1c00280e14ca8a62
 
 build:
   number: 0
