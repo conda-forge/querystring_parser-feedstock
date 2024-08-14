@@ -10,20 +10,24 @@ source:
   sha256: 644fce1cffe0530453b43a83a38094dbe422ccba8c9b2f2a1c00280e14ca8a62
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
   noarch: python
 
 requirements:
   host:
     - pip
-    - python
+    - python >=2.7
   run:
-    - python
+    - python >=2.7
     - requests
     - six
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - querystring_parser
 
@@ -39,3 +43,4 @@ extra:
   recipe-maintainers:
     - jaroslawk
     - paulmelnikow
+    - xhochy
