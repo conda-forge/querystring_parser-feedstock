@@ -147,4 +147,5 @@ Feedstock Maintainers
 
 * [@jaroslawk](https://github.com/jaroslawk/)
 * [@paulmelnikow](https://github.com/paulmelnikow/)
+* [@xhochy](https://github.com/xhochy/)
 
